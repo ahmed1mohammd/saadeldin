@@ -1,0 +1,1045 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > #footer {
+  margin-top: auto;
+}
+
+/* Start course page */
+
+.course-page {
+  margin-top: 150px;
+  background: var(--main-color);
+  /* min-height: 250px; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .course-page {
+    background: var(--main-color);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+.content-course-teacher {
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-course-teacher h4 {
+  font-family: "GraphikArabic-Semibold";
+  font-weight: normal;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 18px;
+  line-height: 1.2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .content-course-teacher h4 {
+    font-size: 25px;
+  }
+}
+
+
+.content-course-teacher hr {
+  border: none;
+  width: 90%;
+  height: 3px;
+  margin: auto;
+  border-radius: 50px;
+  background: var(--white-color);
+}
+
+.content-course-teacher .number-lect {
+
+    font-family: "lemonada";
+    width: 95%;
+    margin: auto;
+    border-radius: 60px;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.2);
+  padding: 10px 5px;
+  /* margin: 0; */
+  font-size: 16px;
+  color: var(--white-color);
+  min-height: 50px;
+    padding-left: 5px;
+  padding-right: 5px;
+}
+
+.info-course-teacher {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .info-course-teacher {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.info-course-teacher p {
+  font-family: "lemonada";
+  font-size: 15px;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  margin-bottom: 5px;
+  background: var(--secondry-color);
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .info-course-teacher p {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+}
+
+
+
+.info-course-teacher p svg {
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .course-img {
+    justify-content: center;
+  }
+
+}
+
+.course-img img {
+  width: 100%;
+  /* max-height: 250px; */
+  border-radius: 20px;
+  border: 3px solid var(--secondry-color);
+}
+
+.subscription {
+  font-family: "dg-3asomy-regular";
+  font-weight: normal;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background: var(--main-color);
+  padding: 4px 20px;
+  margin: auto;
+  border-radius: 46px;
+  font-size: 20px;
+  color: var(--white-color);
+  border: 3px var(--light-color) solid;
+}
+
+.subscription-now {
+  font-family: "dg-3asomy-regular";
+  font-weight: normal;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background: var(--white-color);
+  padding: 4px 20px;
+  margin: auto;
+  border-radius: 46px;
+  font-size: 20px;
+  color: var(--main-color);
+  outline: 2px var(--secondry-color) dashed;
+  cursor: default;
+}
+
+.subscription-now:hover {
+  text-decoration: none;
+  color: var(--main-color);
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .subscription,
+  .subscription-now {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .subscription,
+  .subscription-now {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .subscription,
+  .subscription-now {
+    font-size: 16px;
+  }
+}
+
+.subscription:hover {
+  background: var(--white-color);
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+/* End course page */
+
+/* --------------- */
+.video-preview {
+  position: relative;
+  z-index: 10;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.space {
+  margin: 50px;
+}
+
+.video-preview.show {
+  max-height: 600px;
+  opacity: 1;
+  margin: 0;
+}
+
+iframe {
+  display: block;
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  border: 4px solid var(--secondry-color);
+  box-shadow: 0 2px 10px var(--main-color);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.close-video {
+  display: block;
+  padding: 4px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+  font-family: "LamaSans-Bold";
+  /* font-weight: normal; */
+  background-color: var(--main-color);
+  color: var(--white-color);
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-preview span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  text-align: right;
+  font-family: "LamaSans-Bold";
+  /* font-weight: normal; */
+  background-color: var(--secondry-color);
+  width: fit-content;
+  padding: 5px 15px;
+  border: 4px solid var(--main-color);
+  border-radius: 50px;
+  margin: auto;
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .video-preview span,
+  .video-preview svg {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .video-preview span,
+  .video-preview svg {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .video-preview span,
+  .video-preview svg {
+    font-size: 14px;
+  }
+}
+
+/* --------------- */
+
+/* Start All content course */
+
+.accordion-card {
+  background: var(--white-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px var(--black-color);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/* ✅ العنوان الرئيسي */
+.accordion-title {
+  background: var(--secondry-color);
+  padding: 20px 20px 20px 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-title h2 {
+  font-family: "GraphikArabic-Bold";
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--black-color);
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .accordion-title h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .accordion-title h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .accordion-title h2 {
+    font-size: 18px;
+  }
+}
+
+.accordion-title::before {
+  content: "\f13a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white-color);
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.accordion-title.open::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.title-text {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-main {
+  font-size: 27px;
+  color: var(--black-color);
+}
+
+/* ✅ الجسم الرئيسي المتحكم فيه بالسرعة */
+.accordion-main-body {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--main-color);
+  /* transition: all 0.5s ease; */
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s 0.05s ease, transform 0.5s 0.05s ease;
+  will-change: max-height, opacity, transform;
+}
+
+.accordion-main-body.open {
+  max-height: 10000px; /* أكبر من محتواك */
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ العناصر الفرعية */
+.accordion-sub-toggle {
+  background-color: var(--white-color);
+  padding: 15px 15px 15px 40px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.accordion-sub-toggle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  text-align: right;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  /* font-weight: bold; */
+}
+
+@media only screen and (max-width: 767px) {
+  .accordion-sub-toggle span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .accordion-sub-toggle span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .accordion-sub-toggle span {
+    font-size: 14px;
+  }
+}
+
+.accordion-sub-toggle::before {
+  content: "\f13a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondry-color);
+  font-size: 23px;
+  transition: 0.5s;
+}
+
+.accordion-sub-toggle.open::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-sub-content {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--white-color);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s 0.05s ease, transform 0.5s 0.05s ease;
+  will-change: max-height, opacity, transform;
+}
+
+.accordion-sub-content.open {
+  max-height: 2000px;
+  padding: 15px 20px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height 0.5s ease;
+}
+
+.accordion-sub-content p {
+  text-align: right;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+}
+
+.separator {
+  height: 4px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.separator.red {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.button {
+  padding: 4px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 575px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    font-size: 13px;
+  }
+}
+
+.video-button {
+  color: var(--white-color);
+  background: #d6ae0f;
+  border: 3px solid #d6ae0f;
+}
+
+.video-button:hover {
+  text-decoration: none;
+  background: var(--white-color);
+  color: #d6ae0f;
+}
+
+.icon-video {
+  color: #d6ae0f;
+  margin-left: 5px;
+}
+
+.file-button {
+  color: var(--white-color);
+  background: #3b82f6;
+  border: 3px solid #3b82f6;
+  text-decoration: none;
+}
+
+.file-button:hover {
+  text-decoration: none;
+  background: var(--white-color);
+  color: #3b82f6;
+}
+
+.icon-file {
+  color: #3b82f6;
+  margin-left: 5px;
+}
+
+.file-preview {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.file-preview.show {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.file-preview span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  text-align: right;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background-color: var(--secondry-color);
+  width: fit-content;
+  padding: 10px 20px;
+  border: 4px solid var(--main-color);
+  border-radius: 50px;
+  margin: auto;
+  color: var(--white-color);
+}
+
+.download-file {
+  padding: 8px 13px;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background: #3b82f6;
+  border: 2px solid #3b82f6;
+  color: var(--white-color);
+  width: 80%;
+  margin: auto;
+}
+
+.download-file:hover {
+  background: var(--white-color);
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.exam-button {
+  color: var(--white-color);
+  background: #1ed336;
+  border: 3px solid #1ed336;
+  text-decoration: none;
+}
+
+.exam-button:hover {
+  text-decoration: none;
+  background: var(--white-color);
+  color: #1ed336;
+}
+
+.icon-exam {
+  color: #1ed336;
+  margin-left: 5px;
+}
+
+.exam-preview {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.exam-preview.show {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.exam-preview span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  text-align: right;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background-color: var(--secondry-color);
+  width: fit-content;
+  padding: 10px 20px;
+  border: 4px solid var(--main-color);
+  border-radius: 50px;
+  margin: auto;
+  color: var(--white-color);
+}
+
+.start-exam {
+  padding: 8px 13px;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background: #1ed336;
+  border: 2px solid #1ed336;
+  color: var(--white-color);
+  width: 80%;
+  margin: auto;
+}
+
+.start-exam:hover {
+  background: var(--white-color);
+  color: #1ed336;
+  text-decoration: none;
+}
+
+.exam-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exam-question {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.exam-question.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.question-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-options label {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.answer-options label:hover {
+  background: #e0e0e0;
+}
+
+.answer-options input[type="radio"] {
+  margin-left: 10px;
+  transform: scale(1.3);
+  accent-color: #007bff;
+}
+
+.question-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.question-nav button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.question-nav button:hover {
+  background: #0056b3;
+}
+/* تغليف الفيديو */
+.video-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* الفيديو نفسه */
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframe-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  border: 4px solid var(--secondry-color);
+  box-shadow: 0 2px 10px var(--main-color);
+}
+
+/* زرار إغلاق الفيديو في النص */
+.close-video-btn {
+  display: block;
+  margin: 15px auto 0 auto; /* يخليه في النص */
+  padding: 8px 20px;
+  background: var(--main-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: "Expo Arabic Book";
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-video-btn:hover {
+  background: var(--main-color);
+}
+
+.close-video-btn {
+  display: block;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  margin: 15px auto;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-video-btn:hover {
+  background-color: var(--main-color);
+}
+
+.close-file-btn,
+.close-exam-btn {
+  display: block;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background-color: #6c757d;
+  color: var(--white-color);
+  margin: 15px auto;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-file-btn:hover,
+.close-exam-btn:hover {
+  background-color: #5a6268;
+}
+
+/* ----------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(script):not(style):not(#preloader):not(#navbar):not(#navbar-side) {
+  flex-shrink: 0;
+}
+
+/* المحتوى الأساسي ياخد المساحة */
+main,
+section.info-course,
+section.all-content-course {
+  flex: 1;
+}
+
+/* تنسيق العناصر المقيدة */
+.restricted {
+  position: relative;
+  opacity: 0.6;
+  filter: grayscale(30%);
+}
+
+.restriction-lock {
+  color: #ff6b6b;
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.restriction-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.restriction-overlay i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+.restriction-overlay p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.restriction-message {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, var(--black-color), var(--main-color));
+  border: 2px dashed var(--black-color);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.restriction-message i {
+  font-size: 2.5em;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.restriction-message p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* إزالة المسافات من العناصر المخفية */
+.video-preview,
+.file-preview,
+.exam-preview {
+  margin: 0;
+  padding: 0;
+}
+
+.video-preview:not(.show),
+.file-preview:not(.show),
+.exam-preview:not(.show) {
+  display: none !important;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* مسافة آمنة للفيديو المفتوح */
+.video-preview.space {
+  margin-top: 20px !important;
+  margin-bottom: 70px !important;
+}
+
+/* تنسيق الأزرار المعطلة */
+.button.disabled,
+.download-file.disabled,
+.start-exam.disabled {
+  background: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.button.disabled:hover,
+.download-file.disabled:hover,
+.start-exam.disabled:hover {
+  background: #ccc !important;
+  transform: none !important;
+}
+
+/* تنسيق التأكيد على زر الاشتراك */
+.highlight {
+  animation: highlightSubscription 2s ease-in-out;
+  border-radius: 8px;
+}
+
+@keyframes highlightSubscription {
+  0% {
+    background: transparent;
+  }
+  25% {
+    background: rgba(255, 107, 107, 0.1);
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    background: rgba(255, 107, 107, 0.2);
+    box-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+  }
+  75% {
+    background: rgba(255, 107, 107, 0.1);
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+  }
+  100% {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/* تنسيق العناصر الفرعية المقيدة */
+.accordion-sub-toggle.restricted {
+  background: #f5f5f5;
+  border-left: 4px solid #ff6b6b;
+}
+
+.accordion-sub-toggle.restricted:hover {
+  background: #f0f0f0;
+}
+
+/* تنسيق إضافي للعناصر المقيدة */
+.video-preview.restricted .iframe-wrapper,
+.file-preview.restricted,
+.exam-preview.restricted {
+  position: relative;
+  min-height: 150px;
+}
+
+.accordion-card.restricted .accordion-title {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-left: 4px solid #ff6b6b;
+}
+
+.accordion-card.restricted .accordion-title h2 {
+  color: #666;
+}
+
+/* تحسين مظهر رسائل التقييد على الأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .restriction-overlay {
+    padding: 10px;
+  }
+
+  .restriction-overlay i {
+    font-size: 1.5em;
+  }
+
+  .restriction-overlay p {
+    font-size: 12px;
+  }
+
+  .restriction-message {
+    padding: 20px 15px;
+  }
+
+  .restriction-message i {
+    font-size: 2em;
+  }
+
+  .restriction-message p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Science مع مستر عمر طارق ✨ | ساينس ممتع مش صعب</title>
+  <meta name="description"
+    content="تعلم مادة Science مع مستر عمر طارق طه الصادق لطلاب الإعدادي وأولى ثانوي. شرح مبسط، فهم حقيقي، وساينس ممتع بعيد عن الحفظ والتعقيد." />
+  <meta name="keywords"
+    content="مستر عمر طارق, ساينس, شرح ساينس, Science إعدادي, Science أولى ثانوي, فهم مش حفظ, تبسيط العلوم, مدرس Science القاهرة" />
+  <meta name="author" content="Mr. Omar Tarek" />
+
+  <!-- Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="Science مع مستر عمر طارق ✨" />
+  <meta property="og:description" content="مع بعض الساينس هيبقى ممتع مش صعب ✨  
+    افتكر دايمًا إن الساينس فهم مش حفظ." />
+  <meta property="og:image" content="/media/img/main-img.webp" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Structured Data: Website -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Science مع مستر عمر",
+      "url": "https://mr-omartarek.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mr-omartarek.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- Structured Data: Teacher -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "مستر عمر طارق طه الصادق",
+      "jobTitle": "مدرس Science",
+      "description": "مدرس مادة Science لطلاب الإعدادي وأولى ثانوي، متخصص في الشرح المبسط والفهم العميق بعيدًا عن الحفظ.",
+      "url": "https://mr-omartarek.com",
+      "sameAs": [
+        "https://www.facebook.com/share/16ajr7fnMq/",
+        "https://youtube.com/@science-mr-omar",
+        "https://www.instagram.com/omartarek_213"
+      ]
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Lemonada:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Styles -->
+
+    <!-- الملفات الأساسية -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/exam.css" />
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"  
+        rel="stylesheet" 
+    />
+</head>
+
+
+  <body>
+
+
+    <section class="exam-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 exam-container">
+            <div class="info-question">
+              <div class="timer">
+                الوقت المتبقي <br />
+                <span id="timer">00 : 00</span>
+              </div>
+
+              <button id="finishBtn" class="finish-btn">إنهاء الاختبار</button>
+
+              <!-- إحصائيات -->
+              <div class="exam-stats">
+                <div class="total-questions">
+                  عدد الأسئلة : <span id="totalQuestions">50</span>
+                </div>
+
+                <div class="skipped">
+                  الأسئلة غير المحلوله : <span id="skipped">0</span>
+                </div>
+                <div class="solved">
+                  الأسئلة المحلوله : <span id="solved">0</span>
+                </div>
+                <div class="current">
+                  السؤال الحالي : <span id="current">1</span>
+                </div>
+              </div>
+
+              <!-- شبكة الأسئلة -->
+              <div class="question-grid" id="questionGrid"></div>
+
+              <!-- إنهاء -->
+              <div class="finished-message" id="finishedMsg"></div>
+            </div>
+
+            <div class="all-question">
+            </div>
+            <div class="question-nav">
+              <button id="prevBtn">السابق</button>
+              <button id="nextBtn">التالي</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start footer section home -->
+
+    <div id="footer"></div>
+    <script src="js/footer.js"></script>
+
+    <!-- End footer section home -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      function initPreloader() {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+          preloader.classList.add("hidden");
+        }
+      }
+      window.addEventListener("load", initPreloader);
+    </script>
+
+    <!-- file main js -->
+    <script src="js/main.js" defer></script>
+    <!-- file course page js -->
+    <script src="js/sweetalert2@11.js"></script>
+    <script src="js/exam.js" defer></script>
+    <!-- file navbar js -->
+    <!-- <script src="js/navbar.js"></script> -->
+    <!-- file js fonts -->
+    <script src="js/all.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- file js bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- file wow -->
+    <script src="js/wow.min.js"></script>
+    <!-- script to start wow -->
+    <script>
+      new WOW().init();
+    </script>
+    <!-- file mdb -->
+    <!-- <script src="js/mdb.min.js"></script> -->
+  </body>
+</html>

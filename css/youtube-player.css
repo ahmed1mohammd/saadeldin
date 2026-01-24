@@ -1,0 +1,319 @@
+
+#darseli-player-container {
+  position: relative;
+  width: 700px;
+  max-width: 95%;
+  aspect-ratio: 16/9;
+  background: transparent;
+  background: var(--secondry-color);
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  margin: auto; /* Center the player */
+  border: 4px solid var(--main-color);
+  /* padding: 5px; */
+  box-sizing: border-box;
+}
+
+
+#darseli-player-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.darseli-player-overlay {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: var(--secondry-color);
+  z-index: 4;
+  transition: background 0.6s ease;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes moveWatermark {
+  0% {
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+  }
+  15% {
+    top: 10%;
+    left: 80%;
+  }
+  30% {
+    top: 50%;
+    left: 90%;
+  }
+  45% {
+    top: 85%;
+    left: 70%;
+  }
+  60% {
+    top: 90%;
+    left: 10%;
+  }
+  75% {
+    top: 40%;
+    left: 0%;
+  }
+  90% {
+    top: 10%;
+    left: 30%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+/* Watermark Styling */
+#darseli-player-watermark {
+  font-family: "DG-3asomy-Regular";
+  font-size: 16px; /* تكبير الخط قليلاً */
+  position: absolute;
+  z-index: 3;
+  color: #8100007e; /* زيادة الوضوح */
+  pointer-events: none; /* Allow clicks to pass through */
+  /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);  */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+  /* Add animation */
+  animation: moveWatermark 30s linear infinite;
+}
+
+#darseli-player-topOverlay {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: 52px; 
+  border-radius: 20px;
+  backdrop-filter: blur(15px); /* بلور قوي لكن أنعم */
+background: linear-gradient(to bottom, #19183b25, transparent); /* الظل يتلاشى للأسفل */
+  z-index: 5; /* فوق overlay وتحت controls */
+}
+
+.content-topOverlay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+#darseli-player-topOverlay img {
+  width: 50px;
+  overflow: hidden;
+}
+
+
+.darseli-player-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  gap: 5px;
+  font-size: 14px;
+  z-index: 5;
+  opacity: 0;
+}
+
+/* تعديلات وضع ملء الشاشة */
+#darseli-player-container:fullscreen .darseli-player-progress-bar {
+  height: 10px; /* زيادة ارتفاع شريط التقدم */
+  border-radius: 0; /* إزالة الحواف الدائرية ليمتد بعرض الشاشة */
+  bottom: 0; /* إلصاقه بأسفل الشاشة */
+}
+
+.darseli-player-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--secondry-color);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+}
+
+.darseli-player-progress {
+  width: 0%;
+  height: 100%;
+  background: var(--white-color);
+  border-radius: 5px;
+  transition: width 0.1s linear;
+}
+
+.darseli-player-tooltip-time {
+  position: absolute;
+  bottom: 110%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 11px;
+  border-radius: 3px;
+  display: none;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.darseli-player-bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  flex-wrap: nowrap;
+}
+
+.darseli-player-left-controls,
+.darseli-player-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.darseli-player-control-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.darseli-player-control-btn:hover {
+  color: #00c9d2;
+}
+
+.darseli-player-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* font-size: 14px; */
+  color: white;
+}
+
+.darseli-player-time span {
+  display: inline;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.darseli-player-volume-slider {
+  width: 80px;
+  /* accent-color: #00c9d2; */
+}
+
+.darseli-player-settings-menu {
+  position: absolute;
+  bottom: 45px;
+  right: 10px;
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+
+.darseli-player-settings-menu select {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .darseli-player-control-btn {
+    font-size: 20px;
+  }
+  .darseli-player-volume-slider {
+    width: 45px;
+  }
+  .darseli-player-time {
+    font-size: 11px;
+  }
+}
+
+/* تحسينات إضافية للموبايل */
+@media (max-width: 480px) {
+  .darseli-player-bottom-controls {
+    gap: 5px; /* تقليل المسافة بين العناصر */
+    padding: 5px;
+  }
+
+  .darseli-player-left-controls,
+  .darseli-player-right-controls {
+    gap: 4px; /* تقليل المسافة بين الأيقونات */
+  }
+
+  .darseli-player-control-btn {
+    font-size: 18px; /* تصغير حجم الأيقونات قليلاً */
+  }
+
+  #darseli-player-middleBtn {
+    width: 60px; /* تصغير حجم زر التشغيل الأوسط */
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+#darseli-player-middleBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px #fff solid;
+  background: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 6;
+  transition: transform 0.2s, opacity 0.3s;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  #darseli-player-middleBtn {
+
+    font-size: 28px;
+  }
+}
+
+#darseli-player-middleBtn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+.left-side::after {
+  content: "";
+}

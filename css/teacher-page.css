@@ -1,0 +1,134 @@
+:root {
+  --main-color-gradient: linear-gradient(
+    to right,
+    rgba(195, 209, 79),
+    rgba(18, 86, 103) 80%
+  );
+  /* --main-color-gradient: rgba(18, 86, 103); */
+  --secondry-color-gradient: linear-gradient(
+    to right,
+    rgba(210, 35, 42, 1),
+    rgba(22, 4, 68, 1) 80%
+  );
+  --yellow-color: rgba(195, 209, 79);
+  --bluedark-color: #00334c;
+  --bluelight-color: rgba(195, 209, 79);
+  --bluelight-color: rgba(18, 86, 103);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > #footer {
+  margin-top: auto;
+}
+
+/* Start course page */
+
+.teacher-page {
+  margin-top: 150px;
+  background: var(--main-color-gradient);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .teacher-page {
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-color-gradient);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+.info-teacher {
+  border-radius: 25px;
+  padding: 10px;
+  flex: 1 ;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.info-teacher h4 {
+  font-family: "DG Forsha Scribble";
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.info-teacher p {
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 24px;
+  margin: 0;
+}
+
+
+.data-teacher{
+  width: 270px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.data-teacher img {
+  width: 100%;
+  border-radius: 20px;
+  border: 4px solid var(--bluelight-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .data-teacher img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .data-teacher img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .data-teacher img {
+    width: 100%;
+  }
+}
+
+.data-teacher h3 {
+  font-family: "DG Forsha Scribble";
+  color: var(--yellow-color);
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .data-teacher h3 {
+    font-size: 23px;
+  }
+
+  .data-teacher p {
+    font-size: 20px;
+  }
+}
+
+.data-teacher h3 span {
+  color: #fff;
+}
+
+/* End course page */

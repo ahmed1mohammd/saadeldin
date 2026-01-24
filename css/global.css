@@ -1,0 +1,784 @@
+/* Start varibles */
+
+:root {
+  --main-color-gradient: linear-gradient(
+    to right,
+    #386641,
+    #e9bf24 70%
+  );
+  
+  --secondry-color-gradient: linear-gradient(
+    to right,
+    #e9bf24 70%
+    #386641,
+    
+    
+  );
+  --yellow-color: #ddc910;
+  --bluedark-color: #133a10;
+  --bluelight-color: #B7B89F;
+
+  --white-color: #F3F3F3;
+  --black-color: #1B1717;
+
+  --main-color: #e9bf24;
+  --secondry-color: #386641;
+  --third-color: #3f381f;
+  --five-color: #B7B89F;
+  --light-color: #c6c595;
+  --gray-color: #e9bf24;
+  --shdow-dark-color: rgb(255, 255, 255,0.4);
+  --shdow-light-color: rgb(0, 0, 0,0.4);
+}
+
+/* End varibles */
+
+
+/* Start fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lemonada:wght@300..700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+ */
+
+
+
+@font-face {
+  font-family: "W_qalam";
+  src: url("../fonts/W_qalam.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ALLEXP03SAHLAB";
+  src: url("../fonts/ALLEXP03SAHLAB.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------ */
+
+@font-face {
+  font-family: "GraphikArabic-Semibold";
+  src: url("../fonts/GraphikArabic-Semibold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GraphikArabic-Bold";
+  src: url("../fonts/GraphikArabic-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+ 
+@font-face {
+  font-family: "tharwat";
+  src: url("../fonts/THARWATEMARARUQAALIGHT.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aref Ruqaa";
+  src: url("../fonts/aref-regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "arslan";
+  src: url("../fonts/arslan.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hacen-Maghreb";
+  src: url("../fonts/Hacen-Maghreb.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DG-3asomy-Regular";
+  src: url("../fonts/DG-3asomy-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LamaSans-Regular";
+  src: url("../fonts/LamaSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LamaSans-Bold";
+  src: url("../fonts/LamaSans-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LamaSans-BoldItalic";
+  src: url("../fonts/LamaSans-BoldItalic.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LamaSans-SemiBold";
+  src: url("../fonts/LamaSans-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LamaSans-ExtraBold";
+  src: url("../fonts/LamaSans-ExtraBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Expo Arabic Book";
+  src: url("../fonts/ExpoArabic-Book.woff2") format("woff2"),
+    url("../fonts/ExpoArabic-Book.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hacen Algeria Bd";
+  src: url("../fonts/HacenAlgeriaBd.woff2") format("woff2"),
+    url("../fonts/HacenAlgeriaBd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* End fonts */
+
+/* Start Global rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body {
+  user-select: none;
+  cursor: default;
+  font-family: "Cairo";
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background-color: #fff;
+  position: relative;
+}
+
+
+body > *:not(script) {
+  flex-shrink: 0;
+}
+
+body > section.courses-home {
+  flex: 1; /* يخلي محتوى الصفحة يتمدد وياخد المساحة الباقية */
+}
+
+body::after {
+  background-image: url(../media/img/bg-header.webp);
+  background-size: cover;
+  background-position: center;
+  opacity:0.23;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -50;
+}
+
+
+body.dark::after{
+  background-image: url(../media/img/bg-header-dark.webp);
+
+}
+
+
+body.dark {
+  background: #1c241d;
+
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* End Global rules */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* ✅ التأثير هنا */
+  background-color: rgba(255, 255, 255, 0.6); /* شفافية خفيفة */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.feature-card {
+    background: var(--white-color);
+    margin-top: 30px;
+    border-radius: 15px; 
+    padding: 30px 25px;
+    text-align: right;
+    width: 400px;
+    height: 200px;
+    border: 3px solid black; 
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.icon-container {
+    background-color: rgba(56, 102, 65, 0.1); 
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.material-icons {
+    font-size: 35px;
+    color: var(--secondry-color); 
+    transition: color 0.3s ease;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--secondry-color);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.feature-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+.feature-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+
+.feature-card:hover .material-icons,
+.feature-card:hover .feature-title {
+    color: var(--main-color);
+}
+
+
+.feature-card:hover .icon-container {
+    background-color: rgba(233, 191, 36, 0.15); 
+}
+
+/* From Uiverse.io by mobinkakei */
+.loader {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--shdow-dark-color);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+
+
+
+
+/* Start dark mode */
+
+#toggle {
+  width: 73px;
+  height: 36px;
+  background: var(--secondry-color-gradient);
+  box-shadow: inset 0 1px 6px 4px rgba(12, 12, 12, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 0.2rem 0.2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+
+
+.changer span {
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 6px 4px rgba(13, 13, 13, 0.3),
+    0 1px 6px 1px rgba(11, 11, 76, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span svg {
+  font-size: 1.2rem;
+  color: rgba(210, 35, 42, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@media only screen and (max-width: 991px) {
+  #toggle {
+    width: 60px;
+    height: 27px;
+  }
+
+  .changer span {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+#shape {
+  clip-path: circle(0% at 50% 50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* dark */
+
+#toggle.change {
+  background: var(--main-color-gradient);
+}
+
+#shape.change {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(100% at 50% 50%);
+  z-index: 1;
+}
+
+span.change {
+  /* background: var(); */
+  transform: translateX(37px);
+}
+
+@media only screen and (max-width: 991px) {
+  span.change {
+    transform: translateX(32px);
+  }
+}
+
+.moon {
+  font-size: 1.5rem;
+  color: var(--black-color);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 991px) {
+  .moon {
+    font-size: 1.2rem;
+  }
+}
+
+.moon.change {
+  font-size: 0;
+  opacity: 0;
+}
+
+.sun {
+  font-size: 0;
+  opacity: 0;
+}
+
+.sun.change {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 991px) {
+  .sun.change {
+    font-size: 1.2rem;
+  }
+}
+
+/* End dark mode */
+
+
+/* Start call us */
+
+.call-us {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 1000;
+}
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  border: 2px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  border-radius: 50px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/* End call us */
+
+
+/*  */
+
+
+.swal2-popup {
+  background: var(--main-color) !important;
+} 
+
+.swal-custom-popup {
+  font-family: "lemonada", sans-serif;
+  border-radius: 19px;
+  color: var(--white-color);
+
+}
+.swal2-popup {
+  font-family: "lemonada", sans-serif !important;
+  border-radius: 30px !important;
+  border: 3px solid var(--white-color); /* اختياري لو عايز بوردر ظاهر */ 
+  color: var(--white-color);
+
+
+}
+
+.swal2-actions{
+    color: var(--white-color) !important;
+}
+.swal2-title {
+  font-family: "DG-3asomy-Regular", sans-serif !important;
+  font-size: 23px !important;
+  color: var(--black-color);
+}
+.swal2-content {
+  font-family: "LamaSans-Bold", sans-serif !important;
+  font-size: 13px !important;
+  color: var(--white-color);
+}
+
+.swal-confirm-button {
+  font-size: 15px ;
+  /* font-weight: bold; */
+  padding: 10px 30px !important;
+  border-radius: 15px;
+  background: var(--white-color) !important;
+  color: var(--secondry-color) !important; 
+}
+
+.swal-confirm-button:hover {
+    background: #ada8a8;
+}
+
+
+
+/*  */
+
+
+/* Start footer section home */
+
+.footer-home {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+  background: var(--secondry-color);
+  position: relative;
+}
+
+.img-footer {
+  width: 150px;
+  display: block;
+  margin: 20px auto 0px auto;
+}
+
+.coat-footer {
+  font-family: "cairo";
+  font-weight: normal;
+  text-align: center;
+  color: var(--black-color);
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .coat-footer {
+    font-size: 20px;
+  }
+}
+
+.coat-footer span {
+  color: var(--main-color);
+}
+
+.hr-footer {
+  width: 50%;
+  border: 3px solid var(--secondry-color);
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .hr-footer {
+    width: 70%;
+  }
+}
+
+.icon {
+  margin: 30px 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon p {
+  margin: 0;
+  font-family: "cairo";
+  font-size: 30px;
+  color: var(--black-color);
+}
+
+@media only screen and (max-width: 575px) {
+ 
+.icon p {
+    font-size: 20px;
+  }
+}
+
+.footer-home .icon a img {
+  width: 50px;
+}
+.footer-home .icon a img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-home .icon a img {
+    width: 50px;
+  }
+}
+
+.footer-home .coat {
+  font-family: "cairo ";
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+}
+
+.footer-home .coat span {
+  color: var(--light-color);
+}
+
+.copy-right {
+  font-family: "lemonada";
+  color: var(--secondry-color);
+  background: var(--gray-color);
+  letter-spacing: 1px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+  /* height: ; */
+  padding: 20px 5px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .copy-right {
+    font-size: 15px;
+  }
+}
+
+.footer-home .copy-right svg {
+  padding-left: 10px;
+}
+
+.footer-home .copy-right .ros {
+  color: var(--black-color);
+  text-decoration: none;
+}
+.footer-home .copy-right .ros:hover {
+  color: var(--white-color);
+  transform: scale(1.1);
+}
+
+.footer-home .copy-right svg {
+  color: var(--light-color);
+  font-size: 25px;
+}
+
+.footer-home .copy-right svg:hover {
+  color: #0f432b;
+  transform: scale(1.1);
+}
+
+/* End footer section home */

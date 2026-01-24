@@ -1,0 +1,192 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login {
+    margin-top: 40px;
+    text-align: right;
+    flex: 1;
+}
+
+.login-content {
+    margin-top: 90px;
+}
+
+.login-content h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "DG-3asomy-Regular";
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 11px;
+  color: var(--main-color);
+}
+
+.login-content h3.dark {
+  color: var(--white-color);
+}
+
+.login-content h3 span {
+    color: var(--secondry-color);
+}
+
+.login-content .info {
+    color: var(--main-color);
+    font-family: 'El Messiri';
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.login-content form label {
+  color: var(--main-color);
+  font-family: "LamaSans-bold";
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-content form label.dark {
+  color: var(--white-color);
+}
+
+
+.login-content form label i.dark,.login-content form label span.dark {
+    color: var(--secondry-color);
+}
+
+.login-content form label svg {
+    color: var(--secondry-color);
+}
+
+.login-content form input {
+  display: block;
+  font-family: "lemonada";
+  color: var(--main-color);
+  font-size: 15px;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 4px 10px;
+  border: 2px var(--secondry-color) solid;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+}
+
+.login-content form input.dark {
+  color: var(--white-color);
+}
+
+
+.login-content form input:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.login-content form input:nth-of-type(3), .submit {
+  font-family: "DG-3asomy-Regular";
+  text-decoration: none !important;
+  background: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: var(--white-color);
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-bottom: 3px var(--black-color) solid;
+  transition: all linear 0.2s;
+  width: 100%;
+}
+
+.login-content form input:nth-of-type(3).dark, .submit.dark {
+  border-bottom: 3px var(--white-color) solid;
+  
+}
+
+.login-content form input:nth-of-type(3):hover {
+  color: var(--main-color);
+  background: var(--white-color);
+}
+
+.login-content form .forget-password,
+.login-content .new-account {
+  font-family: "lemonada";
+  font-weight: bold;
+  margin-top: 17px;
+  font-size: 13px;
+  color: var(--main-color);
+}
+
+.login-content form .forget-password a,
+.login-content .new-account a {
+  color: var(--secondry-color);
+}
+
+.login-content form .forget-password a:hover,
+.login-content .new-account a:hover {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.login-content .new-account a.dark:hover {
+  color: var(--white-color) !important;
+
+}
+
+.login-content form .forget-password a.dark:hover {
+  color: var(--white-color);
+}
+
+.error-message {
+  background: var(--red-color);
+  font-family: "Expo Arabic Book";
+  color: var(--white-color);
+  background: var(--main-color);
+  padding: 5px 6px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.main-login .login-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-login .login-img img {
+    width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  left: 30px;
+  margin-top: -34px;
+  cursor: pointer;
+  color: var(--secondry-color);
+  font-size: 18px;
+  z-index: 10;
+}
+.toggle-password:hover {
+  color: var(--main-color);
+}
+input[type="password"], input[type="text"] {
+  padding-left: 40px !important;
+}
+

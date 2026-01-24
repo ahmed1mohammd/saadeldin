@@ -1,0 +1,637 @@
+
+
+/* Start Global rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body {
+  user-select: none;
+  cursor: default;
+  background-color: var(--secondry-color);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* End dark mode */
+
+.exam-container {
+  margin: 80px auto 50px;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px 8px var(--black-color);
+  width: 95%;
+}
+
+.info-question {
+  width: 50%;
+  background: var(--secondry-color);
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* شاشة لابتوب صغيرة وتابلت */
+@media (max-width: 992px) {
+  .info-question {
+    width: 70%;
+  }
+}
+
+/* شاشة موبايل عرض متوسط */
+@media (max-width: 768px) {
+  .info-question {
+    width: 80%;
+  }
+}
+
+/* شاشة موبايل صغيرة */
+@media (max-width: 576px) {
+  .info-question {
+    width: 90%;
+  }
+}
+
+/* شاشة موبايل ضيقة جدًا */
+@media (max-width: 400px) {
+  .info-question {
+    width: 95%;
+  }
+}
+
+/* التايمر */
+.timer {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-align: center;
+  width: fit-content;
+  margin: 0px auto 20px;
+  padding: 0px 13px 5px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  line-height: 1.7;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+}
+
+.timer span {
+  background-color: var(--secondry-color);
+  padding: 2px 7px;
+  border-radius: 9px;
+  color: var(--white-color);
+}
+
+.finish-btn {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background-color: #df3e5d;
+  border: 2px solid #df3e5d;
+  color: var(--white-color);
+}
+
+.finish-btn:hover {
+  background-color: var(--white-color);
+  color: #df3e5d;
+}
+
+/* الأحصائيات */
+.exam-stats {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 20px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.exam-stats div {
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--white-color);
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto 0px;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+/* شاشة لابتوب صغيرة وتابلت */
+@media (max-width: 992px) {
+  .exam-stats div {
+    font-size: 15px;
+  }
+}
+
+/* شاشة موبايل عرض متوسط */
+@media (max-width: 768px) {
+  .exam-stats div {
+    font-size: 15px;
+  }
+}
+
+/* شاشة موبايل صغيرة */
+@media (max-width: 576px) {
+  .exam-stats div {
+    font-size: 14px;
+  }
+}
+
+/* شاشة موبايل ضيقة جدًا */
+@media (max-width: 400px) {
+  .exam-stats div {
+    font-size: 13px;
+  }
+}
+
+.exam-stats div span {
+  color: var(--main-color);
+  background-color: var(--white-color);
+  padding: 3px 4px 0px;
+  border-radius: 5px;
+  font-weight: bold !important;
+}
+
+.skipped span {
+  background-color: #e0e0e0 !important;
+  /* color: var(--white-color) !important; */
+}
+
+.solved span {
+  background-color: #37cd33 !important;
+  color: var(--white-color) !important;
+}
+
+.current span {
+  background-color: var(--main-color) !important;
+  color: var(--white-color) !important;
+}
+
+.total-questions {
+  margin-top: 0px !important;
+}
+
+.current {
+  padding: 4px 9px;
+  border: 2px solid var(--white-color);
+  border-radius: 7px;
+  background-color: var(--white-color);
+  color: var(--main-color) !important;
+  font-weight: bold !important;
+}
+
+/* أزرار التنقل */
+.question-nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: var(--secondry-color);
+  border-radius: 50px;
+}
+
+@media (max-width: 992px) {
+  .question-nav {
+    width: 70%;
+  }
+}
+
+/* شاشة موبايل عرض متوسط */
+@media (max-width: 768px) {
+  .question-nav {
+    width: 80%;
+  }
+}
+
+/* شاشة موبايل صغيرة */
+@media (max-width: 576px) {
+  .question-nav {
+    width: 90%;
+  }
+}
+
+/* شاشة موبايل ضيقة جدًا */
+@media (max-width: 400px) {
+  .question-nav {
+    width: 95%;
+  }
+}
+.question-nav button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 35px;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: white;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.question-nav button:hover {
+  background: var(--white-color);
+  color: var(--main-color);
+}
+
+/* رسالة النهاية */
+.finished-message {
+  text-align: center;
+  font-size: 24px;
+  color: #c0392b;
+  font-weight: bold;
+  display: none;
+  margin-top: 40px;
+}
+
+/* شبكة الأسئلة */
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+  margin-top: 40px;
+}
+
+/* شاشة موبايل عرض متوسط */
+@media (max-width: 768px) {
+  .question-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* شاشة موبايل صغيرة */
+@media (max-width: 576px) {
+  .question-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* شاشة موبايل ضيقة جدًا */
+@media (max-width: 400px) {
+  .question-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.question-grid button {
+  min-width: 35px;
+  min-height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Expo Arabic Book";
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* حالات الأزرار */
+.grid-unanswered {
+  background-color: #e0e0e0;
+  color: black;
+}
+.grid-answered {
+  background-color: #37cd33;
+  color: white;
+}
+.grid-current {
+  border: 3px solid var(--main-color) !important;
+}
+
+.result-progress {
+  margin-top: 0px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px !important;
+  text-align: center;
+  font-family: "Expo Arabic Book";
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--main-color);
+}
+.progress-bar {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  border-radius: 50px;
+  background: var(--main-color-gradient);
+}
+
+.progress-exam {
+  height: 25px;
+  margin-top: 20px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+
+
+}
+
+/*  */
+
+/* كل سؤال */
+.exam-question {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease-in-out;
+  flex-direction: column; /* 👈 ضروري لتجنب التمدد الأفقي */
+  align-items: center; /* 👈 لضبط الصورة في النص */
+  overflow: hidden; /* 👈 عشان الصورة ما تطلعش بره */
+}
+
+.exam-question.active {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+.correct-answer {
+  display: block;
+  opacity: 1;
+  border: 5px solid #28a745;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  background-color: #2fa14947;
+  padding: 5px 5px;
+}
+
+.uncorrect-answer {
+  display: block;
+  opacity: 1;
+  border: 5px solid #c0392b;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  background-color: #dc354540;
+  padding: 5px 5px;
+
+}
+
+.grid-correct {
+  background-color: #28a745 !important;
+  color: var(--white-color);
+}
+.grid-wrong {
+  background-color: #dc3545 !important;
+  color: var(--white-color);
+}
+
+/* صورة السؤال */
+
+.question-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.question-image img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+}
+
+.question-arabic {
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  text-align: right;
+  font-size: 20px;
+}
+
+.question-arabic p,
+.question-english p {
+  margin-bottom: 0;
+}
+
+/* شاشة لابتوب صغيرة وتابلت */
+@media (max-width: 992px) {
+  .question-arabic p,
+  .question-english p {
+    font-size: 18px;
+  }
+}
+
+/* شاشة موبايل عرض متوسط */
+@media (max-width: 768px) {
+  .question-arabic p,
+  .question-english p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+.question-english {
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  text-align: left;
+  font-size: 20px;
+}
+
+.fullscreen-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.en {
+  justify-content: flex-end !important;
+}
+
+.radio-group-container {
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  font-family: "Expo Arabic Book";
+  font-weight: bold;
+}
+
+.radio-label {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-custom {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid var(--secondry-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.radio-custom::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--main-color);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.radio-custom::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: var(--main-color);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+.radio-text {
+  color: var(--white-color);
+  transition: color 0.3s ease;
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* شاشة لابتوب صغيرة وتابلت */
+@media (max-width: 992px) {
+  .radio-text {
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+label.show-correct {
+  border: 3px solid #28a745;
+  background-color: #2fa14947;
+  border-radius: 50px;
+  padding: 6px 5px;
+  margin: 0px 4px;
+  margin-bottom: 5px;
+}
+
+label.show-wrong {
+  border: 3px solid #c0392b;
+  background-color: #dc354540;
+  border-radius: 50px;
+  padding: 6px 5px;
+  margin: 0px 4px;
+  margin-bottom: 5px;
+}
+
+/* شاشة موبايل عرض متوسط */
+
+/* شاشة موبايل صغيرة */
+@media (max-width: 576px) {
+  .radio-text {
+    font-size: 14px;
+  }
+}
+
+.radio-label:hover .radio-input:not(:checked) + .radio-custom {
+  transform: scale(1.1);
+  border-color: #8a8daf;
+}
+
+.radio-label:hover .radio-text {
+  color: #e2e4f4;
+}
+
+.radio-input:checked + .radio-custom {
+  border-color: var(--main-color);
+  transform: scale(0.9);
+}
+
+.radio-input:checked + .radio-custom::before {
+  transform: scale(1);
+  background-color: var(--main-color);
+}
+
+.radio-input:checked + .radio-custom::after {
+  opacity: 1;
+  transform: scale(1.3);
+  animation: orbit 2.5s infinite linear;
+  /* box-shadow: 0 0 12px var(--main-color), 0 0 80px rgba(0, 166, 255, 0.2); */
+}
+
+.radio-input:checked ~ .radio-text {
+  color: var(--secondry-color);
+  /* font-weight: 700; */
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 400px) {
+  .radio-group-container {
+    padding: 15px 0px;
+  }
+
+  .radio-label {
+    margin: 15px 0;
+  }
+
+  .radio-text {
+    font-size: 12px;
+  }
+}

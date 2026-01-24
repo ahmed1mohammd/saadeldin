@@ -1,0 +1,117 @@
+
+/* Start fawater home section */
+
+.speacial-heading {
+  font-family: "DG-3asomy-Regular";
+  font-size: 30px;
+  color: var(--main-color);
+  margin-top: 50px;
+}
+
+.speacial-heading span {
+  color: var(--black-color);
+}
+
+.invoice-container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: "Expo Arabic Book";
+  font-weight: normal;
+  background: #f3f4f6;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  direction: rtl;
+  text-align: right;
+  box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.1) ;
+
+}
+
+.invoice-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.invoice-header h2 {
+  margin: 0;
+  color: #00334c;
+}
+
+.invoice-meta p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: right;
+}
+
+.invoice-table th {
+  background-color: #f0f0f0;
+}
+
+.invoice-total {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+.btn-print{
+border: none;
+background: var(--secondry-color);
+color: #fff;
+padding: 7px 7px;
+border-radius: 10px;
+  font-family: "lemonada", sans-serif;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.btn-print:hover{
+  box-shadow: 0 0 4px 2px var(--black-color);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .btn-print{
+    display: none;
+
+  }
+
+  .invoice, .invoice * {
+    visibility: visible;
+  }
+
+  .invoice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+
+/* End fawater home section */
