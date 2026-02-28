@@ -121,14 +121,14 @@ function auth() {
                       class="create-account"
                     >
 
-                <img src="/media/img/create-icon.svg" alt="">
+                <img src="media/img/create-icon.svg" alt="create icon" style="width: 35px; height: 35px" />
                       
                       انشئ حسابك
                     </a>
                   </li>
                   <li>
                     <a href="login.html" class="login-button">
-                <img src="/media/img/login-icon.svg" alt="">
+                <img src="media/img/login-icon.svg" alt="login icon" style="width: 35px; height: 35px" />
 
                       سجل دخولك
                     </a>

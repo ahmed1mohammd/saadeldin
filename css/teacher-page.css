@@ -60,7 +60,7 @@ body > #footer {
 }
 
 .info-teacher h4 {
-  font-family: "DG Forsha Scribble";
+  font-family: "barada-reqa";
   text-align: center;
   font-size: 50px;
   margin: 0;
@@ -69,7 +69,7 @@ body > #footer {
 }
 
 .info-teacher p {
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   text-align: center;
   padding: 20px 20px;
@@ -112,7 +112,7 @@ body > #footer {
 }
 
 .data-teacher h3 {
-  font-family: "DG Forsha Scribble";
+  font-family: "barada-reqa";
   color: var(--yellow-color);
   margin-top: 5px;
 }

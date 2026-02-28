@@ -2,7 +2,7 @@
 /* Start fawater home section */
 
 .speacial-heading {
-  font-family: "DG-3asomy-Regular";
+  font-family: "barada-reqa";
   font-size: 30px;
   color: var(--main-color);
   margin-top: 50px;
@@ -15,7 +15,7 @@
 .invoice-container {
   max-width: 600px;
   margin: 30px auto;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background: #f3f4f6;
   border: 1px solid #ddd;
@@ -80,7 +80,7 @@ background: var(--secondry-color);
 color: #fff;
 padding: 7px 7px;
 border-radius: 10px;
-  font-family: "lemonada", sans-serif;
+  font-family: "barada-reqa", sans-serif;
   font-weight: normal;
   margin-top: 50px;
   margin-left: auto;

@@ -2,57 +2,60 @@
 
 .speacial-heading {
   display: flex;
-  gap: 5px;
-  align-items: center;
+  flex-direction: column;
+  align-items: center;       
   justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  /* position: relative; */
-
+  width: 100%;               
+  margin: 0 auto 30px auto;  
 }
 
+/* تنسيق العنوان الرئيسي */
 .speacial-heading h1 {
   position: relative !important;
-  font-family: "cairo";
-  font-weight: 900;
-  font-size: 45px;
+  font-family: "barada-reqa";
+  font-weight: 500;
+  font-size: 75px;
   text-align: center;
-  color: var(--secondry-color);
+  color: var(--main-color);
   margin: 0;
   padding: 0 10px;
-  line-height: 1.2;
+  line-height: 1;
   border-radius: 15px;
   z-index: 1;
   width: fit-content;
-  margin-bottom: 30px;
-  /* width: fit-content; */
-
-  position: relative;
+  margin-bottom: 5px;
 }
 
-.speacial-heading h1::after {
+
+.speacial-heading span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; 
+  font-family: "barada-reqa";
+  color: var(--secondry-color);
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+
+.speacial-heading span::before,
+.speacial-heading span::after {
   content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 6px;
-  background: var(--main-color-gradient);
+  display: inline-block;
+  width: 60px; 
+  height: 2px; 
+  background: var(--secondry-color); 
   border-radius: 20px;
 }
 
 
-.speacial-heading h1.dark::after {
-  background: var(--main-color-gradient);
-
+.speacial-heading.dark span::before,
+.speacial-heading.dark span::after {
+  background: var(--secondry-color);
 }
-
 .speacial-heading h1.dark {
-  color: var(--main-color);
+  color: var(--light-color);
 }
 
 
@@ -82,7 +85,7 @@
 
 .shadow-heading {
   position: absolute;
-  font-family: "tharwat";
+  font-family: "barada-reqa";
   font-weight: normal;
   font-size: 70px;
   text-align: center;
@@ -159,7 +162,7 @@
 
 .nav-content.dark {
   background: var(--third-color);
-  box-shadow: 0px 0px 0px 0px var(--shdow-dark-color);
+  box-shadow: 1px 0px 0px 0px var(--shdow-dark-color);
 }
 
 .scrolled {
@@ -216,12 +219,12 @@
 }
 
 .logo img {
-  width: 50px;
+  width: 75px;
 }
 
-/* .logo img.dark {
+.logo img.dark {
   content: url(../media/img/logo-dark.webp);
-} */
+}
 
 @media only screen and (max-width: 767px) {
   .logo {
@@ -373,7 +376,7 @@
 }
 
 .create-account {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   font-weight: normal;
   text-align: center;
   text-decoration: none !important;
@@ -415,7 +418,7 @@
 }
 
 .login-button {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   font-weight: normal;
   text-decoration: none !important;
   background: var(--secondry-color);
@@ -508,7 +511,7 @@
 
 .user-menu::before {
   content: "\f13a";
-  font-family: "Font Awesome 6 Free";
+  font-family: "barada-reqa";
   font-weight: 700;
   position: absolute;
   left: 10px;
@@ -556,8 +559,8 @@
 }
 
 .dropdown-content a {
-  font-family: "lemonada";
-  font-family: "lamasans-bold";
+  font-family: "barada-reqa";
+  font-family: "barada-reqa";
   font-weight: 500;
   font-size: 17px;
   padding: 10px 15px;
@@ -584,23 +587,23 @@
 }
 
 .swal2-title {
-  font-family: "DG-3asomy-Regular" !important;
+  font-family: "barada-reqa" !important;
   font-weight: normal !important;
 }
 
 .swal2-html-container {
-  font-family: "lemonada" !important;
+  font-family: "barada-reqa" !important;
   font-size: 15px !important;
 }
 
 .swal2-confirm {
-  font-family: "lemonada" !important;
+  font-family: "barada-reqa" !important;
   font-size: 13px !important;
   border-radius: 15px !important;
 }
 
 .swal2-cancel {
-  font-family: "lemonada" !important;
+  font-family: "barada-reqa" !important;
   font-size: 13px !important;
   border-radius: 15px !important;
 }
@@ -613,7 +616,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   margin-top: 100px;
   gap: 20px;
 }
@@ -635,19 +638,19 @@
 }
 
 .header-home h3 {
-  font-family: "Cairo";
-  color: var(--secondry-color);
+  font-family: "barada-reqa";
+  color: var(--main-color);
   margin: 0;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-right: 0px;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 70px;
+  font-weight: 500;
   text-align: center;
   /* line-height: ; */
 }
 
 .header-home h3.dark {
-  color: var(--main-color);
+  color: var(--light-color);
 
 }
 
@@ -668,11 +671,11 @@
 }
 
 .header-home h3 span {
-  color: var(--main-color);
+  color: var(--secondry-color);
 }
 
 .header-home h3 .icon {
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
 }
 
 @media only screen and (max-width: 991px) {
@@ -682,22 +685,23 @@
 }
 
 .header-home p {
-  font-family: "Cairo";
-   color: var(--secondry-color);
-  font-size: 30px;
+  font-family: "barada-reqa";
+   color: var(--main-color);
+  font-size: 40px;
+  font-weight: 500;
   text-align: right;
 }
 
 .header-home p.dark {
-  color: var(--main-color);
+  color: var(--secondry-color);
 }
 
 .header-home p span {
-  color: var(--five-color);
+  color: var(--secondry-color);
 }
 
 .header-home p span.dark {
-  color: var(--secondry-color);
+  color: var(--light-color);
 }
 
 @media only screen and (max-width: 991px) {
@@ -718,34 +722,44 @@
 }
 
 .create-new-account {
-  font-family: "Cairo";
-  font-weight: bold;
+  font-family: "barada-reqa", sans-serif;
+  font-size: 25px;
+  font-weight:400 ;
   text-decoration: none !important;
-  background: transparent;
-  padding: 6px 25px;
-  border-radius: 15px;
-  border: 2px var(--secondry-color) solid;
-  color: var(--secondry-color);
-  font-size: 19px;
+  background-color: #d5c4b3; 
+  color: #3b1904;
+  padding: 8px 35px;
+  border-radius: 12px;
+  border: none; 
+  box-shadow: 1px 4px 0px #3b1904; 
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  transition: all linear 0.2s;
+  transition: all 0.1s linear;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
-.create-new-account.dark {
-  border: 2px var(--white-color) solid;
-  color: var(--white-color);
-  
-}
 .create-new-account:hover {
-  background: transparent;
-  border: 2px var(--gray-color) solid;
-  color: var(--gray-color);
+  background-color: #c9b6a3; 
+  color: #3b1904;
+}
+
+
+.create-new-account:active {
+  transform: translateY(4px); 
+  box-shadow: 0px 0px 0px #3b1904; 
+}
+
+
+.create-new-account.dark {
+  background-color: var(--secondry-color); 
+  color: #d5c4b3;
+  box-shadow: 1px 4px 0px #d5c4b3;
 }
 
 .main-img-home img {
@@ -805,14 +819,14 @@
 }
 
 .card-about h3 {
-  font-family: "Cairo";
+  font-family: "barada-reqa";
   font-size: 30px;
   text-align: center;
   color: var(--white-color);
 }
 
 .card-about p {
-  font-family: "W_qalam";
+  font-family: "barada-reqa";
   font-size: 19px;
   text-align: center;
   color: var(--black-color);
@@ -838,21 +852,51 @@
   padding: 20px;
   padding-bottom: 0;
   text-align: center;
-  background: var(--secondry-color);
-  margin: 5px;
+  margin: 5px auto 30px auto; 
   border-radius: 20px;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden; 
+  z-index: 1; 
 }
 
+
+.card-year::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../media/img/pattern.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply; 
+  background-color: inherit; 
+  opacity: 0.35; 
+}
+
+.card-year.dark {
+  background-color: var(--light-color);
+}
+
+.card-year.dark p {
+  color: var(--main-color);
+}
 .card-year a {
   text-decoration: none ;
+  font-size: 25px;
+  color: var(--light-color);
 }
-
+.card-year p {
+  font-size: 35px;
+  color: var(--light-color);
+  
+}
 .card-year a:hover .check-courses{
-  color: var(--main-color) !important ;
+  color: var(--secondry-color) !important ;
 
 }
 
@@ -869,7 +913,7 @@
 }
 
 .check-courses {
-  font-family: "cairo";
+  font-family: "barada-reqa";
   font-size: 22px;
   color: var(--black-color);
   margin: 0;
@@ -878,7 +922,7 @@
 
 
 .title-card-year {
-  font-family: "lamasans-bolditalic";
+  font-family: "barada-reqa";
   font-size: 18px;
   position: absolute;
   right: 15px;
@@ -908,7 +952,7 @@
 }
 
 .year {
-  font-family: "tharwat";
+  font-family: "barada-reqa";
   font-size: 35px;
   background: var(--white-color);
   color: var(--black-color);
@@ -972,6 +1016,7 @@
   margin-bottom: 20px;
 }
 
+
 .course {
   display: flex;
   flex-direction: column;
@@ -1013,8 +1058,8 @@ height: 100%;
 }
 
 .content-course h4 {
-  font-family: "cairo";
-  color: var(--white-color);
+  font-family: sans-serif;
+  color: var(--light-color);
   text-align: center;
   font-size: 25px;
   line-height: 1.3;
@@ -1025,19 +1070,46 @@ height: 100%;
   position: relative;
   width: calc(100% + 30px);
   left: 15px;
-  font-family: "cairo";
-  font-weight: bold;
+  font-family: "barada-reqa";
   text-align: center;
-  background: var(--secondry-color);
+  background: var(--light-color);
   padding: 10px 5px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 25px;
   color: var(--black-color);
     display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
+
+.course.dark{
+ background-color: var(--light-color);
+}
+
+.course.dark .number-lect{
+ background-color: var(--main-color);
+ color: var(--light-color);
+}
+.course.dark h4{
+ color: var(--main-color);
+}
+
+.data-course.dark .price{
+ color: var(--light-color);
+ background-color: var(--main-color);
+}
+.data-course.dark .price span{
+ color: var(--light-color);
+ background-color: var(--main-color);
+}
+
+.data-course.dark .price-del{
+ color: var(--light-color);
+ background-color: var(--main-color);
+}
+
+
 
 .data-course {
   display: flex;
@@ -1047,7 +1119,7 @@ height: 100%;
 }
 
 .data-course .price {
-  font-family: "lamasans-bold";
+  font-family: "barada-reqa";
   font-weight: 500;
   display: flex;
   justify-content: space-between;
@@ -1055,7 +1127,7 @@ height: 100%;
   width: fit-content;
   gap: 4px;
   padding: 4px 8px;
-  background: var(--secondry-color);
+  background: var(--light-color);
   border-radius: 10px;
   font-size: 18px;
   margin: 5px 0px;
@@ -1063,18 +1135,18 @@ height: 100%;
 }
 
 .data-course .price span {
-  font-family: "lamasans-BoldItalic";
+  font-family: "barada-reqa";
   font-size: 16px;
   color: var(--black-color);
 }
 
 .data-course .price-free {
-  font-family: "lamasans-bold";
+  font-family: "barada-reqa";
   display: flex;
   justify-content: center;
   gap: 4px;
   align-items: center;
-  background: var(--white-color);
+  background: var(--light-color);
   font-size: 14px;
   color: var(--main-color);
   padding: 5px 7px;
@@ -1085,7 +1157,7 @@ height: 100%;
   display: flex;
   justify-content: space-between;
   gap: 4px;
-  font-family: "lamasans-bold";
+  font-family: "barada-reqa";
   padding: 4px 6px;
   background: var(--white-color);
   border-radius: 10px;
@@ -1094,7 +1166,7 @@ height: 100%;
 }
 
 .data-course .price-del span {
-  font-family: "lamasans-BoldItalic";
+  font-family: "barada-reqa";
   background: var(--main-color);
   color: var(--white-color);
   text-decoration: line-through;
@@ -1103,8 +1175,8 @@ height: 100%;
 }
 
 .info-course p {
-  font-family: "lemonada";
-  font-size: 12px;
+  font-family: "barada-reqa";
+  font-size: 18px;
   /* display: inline-flex; */
   align-items: center;
   gap: 9px;
@@ -1112,6 +1184,12 @@ height: 100%;
   margin-top: 7px;
   color: var(--white-color);
 }
+
+
+.info-course.dark p  {
+  color: var(--main-color);
+}
+
 
 @media only screen and (max-width: 400px) {
   .info-course p {
@@ -1131,7 +1209,7 @@ height: 100%;
 }
 
 .course-subscription .check {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   /* font-weight: bold; */
   text-decoration: none;
   background: var(--white-color);
@@ -1153,7 +1231,7 @@ height: 100%;
 }
 
 .course-subscription .subscription {
-  font-family: "lamasans-regular";
+  font-family: "barada-reqa";
   font-weight: bold;
   text-decoration: none;
   background: var(--main-color);
@@ -1170,6 +1248,11 @@ height: 100%;
   color: var(--main-color);
 }
 
+.course-subscription.dark a{
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
 .you-subscription {
   background-color: rgb(250, 247, 230);
   font-size: 15px;
@@ -1177,7 +1260,7 @@ height: 100%;
   border: 2px dashed var(--main-color, #b91c1c);
   border-radius: 12px;
   text-align: center;
-  font-family: "Cairo", sans-serif;
+  font-family: "barada-reqa", sans-serif;
 }
 @media (max-width: 400px) {
   .you-subscription {

@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: "DG-3asomy-Regular";
+  font-family: "barada-reqa";
   font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
@@ -45,14 +45,14 @@ body {
 
 .create-content .info {
   color: var(--secondry-color);
-  font-family: "El Messiri";
+  font-family: "barada-reqa";
   font-weight: bold;
   margin-top: 25px;
 }
 
 .create-content form label {
   color: var(--main-color);
-  font-family: "LamaSans-bold";
+  font-family: "barada-reqa";
   font-size: 19px;
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ body {
 
 .create-content form input {
   display: block;
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   color: var(--main-color);
   font-size: 15px;
   margin-bottom: 8px;
@@ -97,7 +97,7 @@ body {
 }
 
 .create-content form input[type="submit"] {
-  font-family: "DG-3asomy-Regular";
+  font-family: "barada-reqa";
   text-decoration: none !important;
   background: var(--main-color);
   padding: 5px 10px;
@@ -126,7 +126,7 @@ body {
 
 .create-content form .forget-password,
 .create-content .new-account {
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   font-weight: bold;
   margin-top: 17px;
   font-size: 13px;
@@ -159,7 +159,7 @@ body {
 
 .error-message {
   background: #b60000;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   color: var(--white-color);
   padding: 5px 6px;
   border-radius: 10px;
@@ -180,22 +180,22 @@ body {
 
 
 .swal-custom-popup {
-  font-family: "lemonada", sans-serif;
+  font-family: "barada-reqa", sans-serif;
   border-radius: 19px;
 }
 .swal2-popup {
-  font-family: "lemonada", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   border-radius: 30px !important;
   border: 3px solid var(--white-color); 
 
 }
 .swal2-title {
-  font-family: "DG-3asomy-Regular", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   font-size: 23px !important;
   color: var(--main-color);
 }
 .swal2-content {
-  font-family: "LamaSans-Bold", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   font-size: 16px !important;
 }
 
@@ -213,7 +213,7 @@ body {
   padding: 10px;
   background: var(--main-color);
   border-radius: 15px;
-  font-family: "LamaSans-Bold", sans-serif;
+  font-family: "barada-reqa", sans-serif;
   width: 90%;
   margin: auto;
   text-align: right;
@@ -255,7 +255,7 @@ body {
 
 .custom-dropdown .selected::before {
   content: "\f13a";
-  font-family: "Font Awesome 6 Free";
+  font-family: "barada-reqa";
   font-weight: 900;
   position: absolute;
   left: 7px;

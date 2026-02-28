@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: right !important;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
 }
 
@@ -22,7 +22,7 @@ body > #footer {
 }
 
 .welcome-user h3 {
-  font-family: "GraphikArabic-Bold";
+  font-family: "barada-reqa";
   font-size: 40px;
   color: var(--main-color);
   width: fit-content;
@@ -74,7 +74,7 @@ body > #footer {
 }
 
 .profile-field {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ body > #footer {
 
 
 .profile-field span {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   font-weight: normal;
   background: transparent;
   border: 2px var(--white-color) solid;

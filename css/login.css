@@ -26,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: "DG-3asomy-Regular";
+  font-family: "barada-reqa";
   font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
@@ -51,7 +51,7 @@ body {
 
 .login-content form label {
   color: var(--main-color);
-  font-family: "LamaSans-bold";
+  font-family: "barada-reqa";
   font-size: 19px;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ body {
 
 .login-content form input {
   display: block;
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   color: var(--main-color);
   font-size: 15px;
   margin-bottom: 8px;
@@ -96,7 +96,7 @@ body {
 }
 
 .login-content form input:nth-of-type(3), .submit {
-  font-family: "DG-3asomy-Regular";
+  font-family: "barada-reqa";
   text-decoration: none !important;
   background: var(--main-color);
   padding: 5px 10px;
@@ -124,7 +124,7 @@ body {
 
 .login-content form .forget-password,
 .login-content .new-account {
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   font-weight: bold;
   margin-top: 17px;
   font-size: 13px;
@@ -153,7 +153,7 @@ body {
 
 .error-message {
   background: var(--red-color);
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   color: var(--white-color);
   background: var(--main-color);
   padding: 5px 6px;

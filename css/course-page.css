@@ -40,7 +40,7 @@ body > #footer {
 }
 
 .content-course-teacher h4 {
-  font-family: "GraphikArabic-Semibold";
+  font-family: "barada-reqa";
   font-weight: normal;
   color: var(--white-color);
   text-align: center;
@@ -69,7 +69,7 @@ body > #footer {
 
 .content-course-teacher .number-lect {
 
-    font-family: "lemonada";
+    font-family: "barada-reqa";
     width: 95%;
     margin: auto;
     border-radius: 60px;
@@ -98,7 +98,7 @@ body > #footer {
 }
 
 .info-course-teacher p {
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   font-size: 15px;
   align-items: center;
   gap: 9px;
@@ -137,7 +137,7 @@ body > #footer {
 }
 
 .subscription {
-  font-family: "dg-3asomy-regular";
+  font-family: "barada-reqa";
   font-weight: normal;
   display: block;
   width: fit-content;
@@ -152,7 +152,7 @@ body > #footer {
 }
 
 .subscription-now {
-  font-family: "dg-3asomy-regular";
+  font-family: "barada-reqa";
   font-weight: normal;
   display: block;
   width: fit-content;
@@ -243,7 +243,7 @@ iframe {
   text-decoration: none;
   font-size: 19px;
   text-align: center;
-  font-family: "LamaSans-Bold";
+  font-family: "barada-reqa";
   /* font-weight: normal; */
   background-color: var(--main-color);
   color: var(--white-color);
@@ -259,7 +259,7 @@ iframe {
   gap: 10px;
   font-size: 25px;
   text-align: right;
-  font-family: "LamaSans-Bold";
+  font-family: "barada-reqa";
   /* font-weight: normal; */
   background-color: var(--secondry-color);
   width: fit-content;
@@ -312,7 +312,7 @@ iframe {
 }
 
 .accordion-title h2 {
-  font-family: "GraphikArabic-Bold";
+  font-family: "barada-reqa";
   font-size: 25px;
   font-weight: bold;
   margin: 0;
@@ -340,7 +340,7 @@ iframe {
 
 .accordion-title::before {
   content: "\f13a";
-  font-family: "Font Awesome 6 Free";
+  font-family: "barada-reqa";
   font-weight: 900;
   position: absolute;
   left: 20px;
@@ -409,7 +409,7 @@ iframe {
   gap: 10px;
   font-size: 20px;
   text-align: right;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   /* font-weight: bold; */
 }
@@ -434,7 +434,7 @@ iframe {
 
 .accordion-sub-toggle::before {
   content: "\f13a";
-  font-family: "Font Awesome 6 Free";
+  font-family: "barada-reqa";
   font-weight: 900;
   position: absolute;
   left: 10px;
@@ -473,7 +473,7 @@ iframe {
 
 .accordion-sub-content p {
   text-align: right;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
 }
 
@@ -497,7 +497,7 @@ iframe {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
 }
 
@@ -567,7 +567,7 @@ iframe {
   gap: 10px;
   font-size: 25px;
   text-align: right;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background-color: var(--secondry-color);
   width: fit-content;
@@ -586,7 +586,7 @@ iframe {
   text-decoration: none;
   font-size: 19px;
   text-align: center;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background: #3b82f6;
   border: 2px solid #3b82f6;
@@ -638,7 +638,7 @@ iframe {
   gap: 10px;
   font-size: 25px;
   text-align: right;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background-color: var(--secondry-color);
   width: fit-content;
@@ -657,7 +657,7 @@ iframe {
   text-decoration: none;
   font-size: 19px;
   text-align: center;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background: #1ed336;
   border: 2px solid #1ed336;
@@ -779,7 +779,7 @@ iframe {
   background: var(--main-color);
   color: var(--white-color);
   font-size: 18px;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -798,7 +798,7 @@ iframe {
   border-radius: 10px;
   font-size: 19px;
   text-align: center;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background-color: var(--main-color);
   color: var(--white-color);
@@ -819,7 +819,7 @@ iframe {
   border-radius: 10px;
   font-size: 19px;
   text-align: center;
-  font-family: "Expo Arabic Book";
+  font-family: "barada-reqa";
   font-weight: normal;
   background-color: #6c757d;
   color: var(--white-color);

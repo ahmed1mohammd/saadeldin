@@ -195,7 +195,7 @@
 /* End snipper */
 
 .create-account {
-  font-family: "El Messiri";
+  font-family: "barada-reqa";
   font-weight: bold;
   text-decoration: none !important;
   background: var(--main-color-gradient);
@@ -234,7 +234,7 @@
 }
 
 .login-button {
-  font-family: "El Messiri";
+  font-family: "barada-reqa";
   font-weight: bold;
   background: white;
   width: 100%;

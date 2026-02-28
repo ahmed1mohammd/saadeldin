@@ -3,30 +3,30 @@
 :root {
   --main-color-gradient: linear-gradient(
     to right,
-    #386641,
-    #e9bf24 70%
+    #491f07,
+    #d1c1b1 70%
   );
   
   --secondry-color-gradient: linear-gradient(
     to right,
     #e9bf24 70%
-    #386641,
+    #e3a75b,
     
     
   );
-  --yellow-color: #ddc910;
-  --bluedark-color: #133a10;
-  --bluelight-color: #B7B89F;
+  --yellow-color: #919191;
+  --bluedark-color: #e3a75b;
+  --bluelight-color: #969696;
 
-  --white-color: #F3F3F3;
-  --black-color: #1B1717;
+  --white-color: #ffffff;
+  --black-color: #000000;
 
-  --main-color: #e9bf24;
-  --secondry-color: #386641;
-  --third-color: #3f381f;
+  --main-color: #491f07;
+  --secondry-color: #d47903;
+  --third-color: #491f07;
   --five-color: #B7B89F;
-  --light-color: #c6c595;
-  --gray-color: #e9bf24;
+  --light-color: #d1c1b1;
+  --gray-color: #491f07;
   --shdow-dark-color: rgb(255, 255, 255,0.4);
   --shdow-light-color: rgb(0, 0, 0,0.4);
 }
@@ -34,130 +34,19 @@
 /* End varibles */
 
 
+
 /* Start fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lemonada:wght@300..700&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
- */
-
-
-
 @font-face {
-  font-family: "W_qalam";
-  src: url("../fonts/W_qalam.woff2") format("woff2");
+  font-family: "barada-reqa";
+  src: url("../fonts/barada-reqa.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ALLEXP03SAHLAB";
-  src: url("../fonts/ALLEXP03SAHLAB.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ------------------------ */
-
-@font-face {
-  font-family: "GraphikArabic-Semibold";
-  src: url("../fonts/GraphikArabic-Semibold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GraphikArabic-Bold";
-  src: url("../fonts/GraphikArabic-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
- 
-@font-face {
-  font-family: "tharwat";
-  src: url("../fonts/THARWATEMARARUQAALIGHT.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Aref Ruqaa";
-  src: url("../fonts/aref-regular.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "arslan";
-  src: url("../fonts/arslan.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Hacen-Maghreb";
-  src: url("../fonts/Hacen-Maghreb.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DG-3asomy-Regular";
-  src: url("../fonts/DG-3asomy-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LamaSans-Regular";
-  src: url("../fonts/LamaSans-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LamaSans-Bold";
-  src: url("../fonts/LamaSans-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LamaSans-BoldItalic";
-  src: url("../fonts/LamaSans-BoldItalic.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LamaSans-SemiBold";
-  src: url("../fonts/LamaSans-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LamaSans-ExtraBold";
-  src: url("../fonts/LamaSans-ExtraBold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Expo Arabic Book";
-  src: url("../fonts/ExpoArabic-Book.woff2") format("woff2"),
-    url("../fonts/ExpoArabic-Book.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Hacen Algeria Bd";
-  src: url("../fonts/HacenAlgeriaBd.woff2") format("woff2"),
-    url("../fonts/HacenAlgeriaBd.woff") format("woff");
-  font-weight: normal;
+  font-family: "a-arslan-wessam-b";
+  src: url("../fonts/a-arslan-wessam-b.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -171,12 +60,13 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.3s;
+  font-family: "barada-reqa", "a-arslan-wessam-b", sans-serif !important;
 }
 
 body {
   user-select: none;
   cursor: default;
-  font-family: "Cairo";
+  font-family: "barada-reqa", "a-arslan-wessam-b", sans-serif !important;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   background-color: #fff;
@@ -207,14 +97,10 @@ body::after {
 }
 
 
-body.dark::after{
-  background-image: url(../media/img/bg-header-dark.webp);
-
-}
 
 
 body.dark {
-  background: #1c241d;
+  background: #211209;
 
 }
 
@@ -278,37 +164,114 @@ body::-webkit-scrollbar {
     transition: color 0.3s ease;
 }
 
-.feature-title {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--secondry-color);
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
 }
 
-.feature-text {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
+.card-number-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #d37e26;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+  font-family: sans-serif, "barada-reqa";
+}
+
+.card-number-top::before,
+.card-number-top::after {
+  content: "";
+  display: inline-block;
+  width: 70px; 
+  height: 3px; 
+  background-color: #d37e26;
+}
+
+/* =========================================
+   تنسيق الكارت الأساسي
+========================================= */
+.feature-card-box {
+  width: 348px; 
+  max-width: 100%;
+  height: 250px; 
+  
+  background-color: var(--main-color);
+  border-radius: 15px; 
+  padding: 20px 25px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.feature-card-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+
+  background-image: url('../media/img/pattern.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply; 
+  background-color: inherit; 
+  opacity: 0.40; 
+}
+
+.feature-card-box .card-title {
+  font-family: "barada-reqa", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  color: #bda998;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+.feature-card-box .card-desc {
+  font-family: "barada-reqa", sans-serif;
+  font-size: 25px;
+  line-height: 2;
+  color: #f1f1f1;
+  margin: 0;
+  text-align: right; 
 }
 
 
 
-.feature-card:hover {
-    border-color: var(--main-color);
-    transform: translateY(-5px);
+.dark .feature-card-box {
+  background-color:var(--light-color);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.03);
 }
 
 
-.feature-card:hover .material-icons,
-.feature-card:hover .feature-title {
-    color: var(--main-color);
+.dark .feature-card-box .card-title {
+  color: var(--main-color); 
+}
+
+.dark .feature-card-box .card-desc {
+  color:#8b4d18; 
 }
 
 
-.feature-card:hover .icon-container {
-    background-color: rgba(233, 191, 36, 0.15); 
+.dark .card-number-top {
+  color: #e89b47;
+}
+
+.dark .card-number-top::before,
+.dark .card-number-top::after {
+  background-color: #e89b47;
 }
 
 /* From Uiverse.io by mobinkakei */
@@ -597,13 +560,13 @@ span.change {
 } 
 
 .swal-custom-popup {
-  font-family: "lemonada", sans-serif;
+  font-family: "barada-reqa", sans-serif;
   border-radius: 19px;
   color: var(--white-color);
 
 }
 .swal2-popup {
-  font-family: "lemonada", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   border-radius: 30px !important;
   border: 3px solid var(--white-color); /* اختياري لو عايز بوردر ظاهر */ 
   color: var(--white-color);
@@ -615,12 +578,12 @@ span.change {
     color: var(--white-color) !important;
 }
 .swal2-title {
-  font-family: "DG-3asomy-Regular", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   font-size: 23px !important;
   color: var(--black-color);
 }
 .swal2-content {
-  font-family: "LamaSans-Bold", sans-serif !important;
+  font-family: "barada-reqa", sans-serif !important;
   font-size: 13px !important;
   color: var(--white-color);
 }
@@ -649,7 +612,7 @@ span.change {
   display: block;
   width: 100%;
   margin-top: 60px;
-  background: var(--secondry-color);
+  background: var(--main-color);
   position: relative;
 }
 
@@ -660,10 +623,10 @@ span.change {
 }
 
 .coat-footer {
-  font-family: "cairo";
+  font-family: "barada-reqa";
   font-weight: normal;
   text-align: center;
-  color: var(--black-color);
+  color: var(--light-color);
   font-size: 30px;
 }
 
@@ -674,12 +637,12 @@ span.change {
 }
 
 .coat-footer span {
-  color: var(--main-color);
+  color: var(--light-color);
 }
 
 .hr-footer {
   width: 50%;
-  border: 3px solid var(--secondry-color);
+  border: 3px solid var(--light-color);
   margin: 20px auto;
   border-radius: 20px;
 }
@@ -701,9 +664,9 @@ span.change {
 
 .icon p {
   margin: 0;
-  font-family: "cairo";
+  font-family: "barada-reqa";
   font-size: 30px;
-  color: var(--black-color);
+  color: var(--light-color);
 }
 
 @media only screen and (max-width: 575px) {
@@ -727,7 +690,7 @@ span.change {
 }
 
 .footer-home .coat {
-  font-family: "cairo ";
+  font-family: "barada-reqa";
   font-weight: bold;
   text-align: center;
   color: #fff;
@@ -739,7 +702,7 @@ span.change {
 }
 
 .copy-right {
-  font-family: "lemonada";
+  font-family: "barada-reqa";
   color: var(--secondry-color);
   background: var(--gray-color);
   letter-spacing: 1px;
