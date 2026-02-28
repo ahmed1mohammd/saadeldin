@@ -216,10 +216,14 @@
 
 .logo {
   text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .logo img {
   width: 100px;
+  border: none !important;
+  outline: none !important;
 }
 
 .logo img.dark {
@@ -236,7 +240,7 @@
 
 @media only screen and (max-width: 767px) {
   .logo img {
-    width: 60px;
+    width: 75px;
   }
 }
 
@@ -250,11 +254,11 @@
     font-size: 36px;
     color: var(--main-color);
     cursor: pointer;
+    transition: color 0.3s ease !important;
   }
   
   .bars.dark {
-    color: var(--white-color);
-
+    color: var(--white-color) !important;
   }
 
   .links {

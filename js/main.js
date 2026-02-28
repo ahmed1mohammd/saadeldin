@@ -163,6 +163,7 @@ function initDarkMode() {
   const toggle = document.getElementById("toggle");
   const Changer = document.querySelectorAll(".changer");
   const body = document.body;
+  const bars = document.querySelector(".bars");
 
   if (!toggle) return;
 
@@ -173,10 +174,12 @@ function initDarkMode() {
       Changer.forEach((el) => el.classList.add("change"));
       // إزالة الدارك من كل العناصر
       document.querySelectorAll("*").forEach(el => el.classList.remove("dark"));
+      if (bars) bars.classList.remove("dark");
     } else {
       Changer.forEach((el) => el.classList.remove("change"));
       // إضافة الدارك لكل العناصر
       document.querySelectorAll("*").forEach(el => el.classList.add("dark"));
+      if (bars) bars.classList.add("dark");
     }
   };
 

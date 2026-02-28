@@ -426,6 +426,7 @@ span svg {
   z-index: -1;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 /* dark */
@@ -434,12 +435,18 @@ span svg {
   background: var(--main-color-gradient);
 }
 
+#toggle.change #shape{
+  opacity: 1;
+  z-index: 1;
+}
+
 #shape.change {
   position: absolute;
   width: 100%;
   height: 100%;
   clip-path: circle(100% at 50% 50%);
   z-index: 1;
+  opacity: 1 !important;
 }
 
 span.change {
