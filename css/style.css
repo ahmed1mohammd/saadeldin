@@ -219,7 +219,7 @@
 }
 
 .logo img {
-  width: 75px;
+  width: 100px;
 }
 
 .logo img.dark {
@@ -236,7 +236,7 @@
 
 @media only screen and (max-width: 767px) {
   .logo img {
-    width: 35px;
+    width: 60px;
   }
 }
 
