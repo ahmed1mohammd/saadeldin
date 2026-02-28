@@ -51,6 +51,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v108/gok-H7rrDkVQoAvgTZTQezfqQd7k_yq2c2dP0FBPr3ViazfG.woff2) format("woff2");
+}
+
 /* End fonts */
 
 /* Start Global rules */
@@ -164,6 +171,28 @@ body::-webkit-scrollbar {
     transition: color 0.3s ease;
 }
 
+.material-icons-outlined {
+    font-family: 'Material Icons Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: var(--secondry-color); 
+    transition: color 0.3s ease;
+    margin-left: 8px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.dark .material-icons-outlined {
+    color: var(--yellow-color);
+}
 
 .card-wrapper {
   display: flex;
